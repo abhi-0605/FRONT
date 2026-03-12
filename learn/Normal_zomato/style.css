@@ -1,0 +1,75 @@
+/* Reset some default browser styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styling */
+header{
+    background-color: #e23744;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+/* Logo text */
+header div{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* Main section */
+main{
+    padding: 50px 40px;
+    text-align: center;
+}
+
+/* Heading */
+main h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e23744;
+}
+
+/* Paragraph */
+main p{
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer{
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
