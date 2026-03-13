@@ -1,0 +1,185 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:black;
+color:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li{
+margin-left:25px;
+}
+
+.navbar a{
+text-decoration:none;
+color:white;
+font-size:14px;
+}
+
+.logo{
+font-weight:bold;
+font-size:18px;
+}
+
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+}
+
+.hero-text h4{
+color:orange;
+margin-bottom:10px;
+}
+
+.hero-text h1{
+font-size:50px;
+}
+
+.hero-text span{
+color:orange;
+}
+
+.hero-text p{
+margin:20px 0;
+}
+
+.buttons a{
+padding:10px 25px;
+margin-right:10px;
+text-decoration:none;
+border-radius:20px;
+}
+
+.btn1{
+background:orange;
+color:black;
+}
+
+.btn2{
+border:1px solid white;
+color:white;
+}
+
+.hero-img img{
+width:350px;
+}
+
+
+/* ABOUT */
+
+.about{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+}
+
+.about-img img{
+width:300px;
+}
+
+.about-text{
+max-width:500px;
+}
+
+.about-text h2{
+font-size:35px;
+margin-bottom:20px;
+}
+
+.about-text ul{
+list-style:none;
+margin-top:20px;
+}
+
+.about-text ul li{
+margin-bottom:10px;
+}
+
+.projects{
+margin-top:20px;
+font-weight:bold;
+}
+
+.download{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:orange;
+color:black;
+text-decoration:none;
+border-radius:20px;
+}
+
+
+/* SKILLS */
+
+.skills{
+padding:80px;
+}
+
+.skills h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.skill{
+margin-bottom:20px;
+}
+
+.skill-name{
+margin-bottom:5px;
+}
+
+.skill-bar{
+width:100%;
+background:#333;
+height:8px;
+border-radius:5px;
+}
+
+.skill-fill{
+height:100%;
+background:orange;
+border-radius:5px;
+}
+
+.php{
+width:90%;
+}
+
+.html{
+width:95%;
+}
+
+.jquery{
+width:85%;
+}
+
+.css{
+width:90%;
+}
