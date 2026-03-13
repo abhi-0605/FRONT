@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+    <style>
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+form div{
+    margin-bottom: 15px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    margin-right: 5px;
+}
+
+textarea{
+    resize: none;
+    height: 80px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #45a049;
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>Form</h1> -->
+
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input id="phone" type="number" placeholder="Enter your number">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email"  placeholder="Enter your gmail" required>
+        </div>
+
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" type="text" placeholder="Enter your Password">
+        </div>
+
+        <div>
+            <label for="dob">DOB</label>
+            <input id="dob" type="date" required>
+        </div>
+
+        <div>
+            <label for="gender">Gender</label>
+            <select name="" id="gender">
+                <option value="" disabled selected>select Gender</option>
+                <option value="male">Male</option>
+                <option value="frmale">Female</option>
+                <option value="trans">Trans</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="pl">plan</label>
+
+            <input id="free" type="radio" name="subscription">
+            <label for="free">Free</label>
+
+            <input id="basic" type="radio" name="subscription">
+            <label for="basic">basic</label>
+
+            <input id="pro" type="radio" name="subscription">
+            <label for="pro">pro</label>
+        </div>
+
+        <div>
+            <input id="term" type="checkbox">
+            <label for="term">Agree with T/C</label>
+        </div>
+
+        <div>
+            <label for="com">Comment</label>
+            <textarea name="" id="com" placeholder="Enter your Comment"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
