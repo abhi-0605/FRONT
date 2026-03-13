@@ -7,5 +7,144 @@
 </head>
 <body>
     This is home
+    
+    <style>
+      
+        .rotator-viewport-rotator-43rvh0rpq {
+            display: inline-block;
+            position: relative;
+            white-space: nowrap;
+            vertical-align: bottom;
+        }
+        .rotator-cursor-rotator-43rvh0rpq {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background-color: #d200a8;
+            margin-left: 2px;
+            vertical-align: middle;
+            animation: blink-rotator-43rvh0rpq 1s step-end infinite;
+        }
+        @keyframes blink-rotator-43rvh0rpq {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+      
+    </style>
+    
+    <div style="
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+  ">
+        <span>We build</span>
+        
+        <span id="viewport-rotator-43rvh0rpq" class="rotator-viewport-rotator-43rvh0rpq">
+            <span id="text-rotator-43rvh0rpq" style="color: #000000"></span><span class="rotator-cursor-rotator-43rvh0rpq"></span>
+        </span>
+
+        <span>websites.</span>
+    </div>
+
+    <script>
+    (function() {
+        const type = 'Typewriter';
+        const words = ["Abhinav ","Kumar"];
+        const interval = 2000;
+        const duration = 0.5;
+        
+        // Typewriter Logic
+        if (type === 'Typewriter') {
+            const textEl = document.getElementById('text-rotator-43rvh0rpq');
+            if (!textEl) return;
+
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            // Map duration (0.1 - 2.0s) to typing speed (20ms - 400ms)
+            const baseTypeSpeed = duration * 200; 
+
+            function typeLoop() {
+                const currentWord = words[wordIndex];
+                let typeSpeed = baseTypeSpeed;
+                
+                if (isDeleting) {
+                    textEl.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                    typeSpeed = baseTypeSpeed / 2; // Deleting is faster
+                } else {
+                    textEl.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    // Finished typing word, pause before delete
+                    isDeleting = true;
+                    typeSpeed = interval; 
+                } else if (isDeleting && charIndex === 0) {
+                    // Finished deleting, move to next word
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    typeSpeed = 300; // Pause before typing next
+                }
+
+                setTimeout(typeLoop, typeSpeed);
+            }
+            
+            // Start
+            typeLoop();
+
+        } else {
+            // CSS Class Swapping Logic (Slide Up, Fade, Blur)
+            const viewport = document.getElementById('viewport-rotator-43rvh0rpq');
+            if (!viewport) return;
+            
+            const els = viewport.querySelectorAll('.rotator-word-rotator-43rvh0rpq');
+            let currentIndex = 0;
+            
+            // Need to set initial width for modes that absolutely position words
+            if (type === 'Fade' || type === 'Blur') {
+                 // Initialize width to first word
+                 requestAnimationFrame(() => {
+                    const first = els[0];
+                    if (first) viewport.style.width = first.offsetWidth + 'px';
+                 });
+            }
+
+            function rotate() {
+                const nextIndex = (currentIndex + 1) % els.length;
+                const currentEl = els[currentIndex];
+                const nextEl = els[nextIndex];
+
+                // Exit current
+                currentEl.classList.remove('active');
+                currentEl.classList.add('exit');
+
+                // Enter next
+                nextEl.classList.remove('exit');
+                nextEl.classList.add('active');
+                
+                // Update container width for absolute positioning animations
+                if (type === 'Fade' || type === 'Blur') {
+                    viewport.style.width = nextEl.offsetWidth + 'px';
+                }
+
+                // Cleanup classes after transition (wait longer than transition duration)
+                setTimeout(() => {
+                    currentEl.classList.remove('exit');
+                }, duration * 1000 + 100);
+
+                currentIndex = nextIndex;
+            }
+
+            setInterval(rotate, interval);
+        }
+    })();
+    </script>
+  
 </body>
 </html>
