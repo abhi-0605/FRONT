@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#box{
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+
+    /* align-items: center; */
+    /* align-items: self-end; */
+}
+
+#box1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(226, 92, 14);
+}
+#box2{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(40, 9, 219);
+}
+#box3{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(251, 13, 128);
+}
