@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
+
 
 header{
     display:flex;
@@ -36,7 +36,7 @@ header ul li a:hover{
     color:#ffd6d9;
 }
 
-/* HERO SECTION */
+
 
 .hero{
     height:90vh;
@@ -60,7 +60,6 @@ header ul li a:hover{
     font-weight:600;
 }
 
-/* SEARCH BAR */
 
 .hero input{
     width:40%;
@@ -70,8 +69,6 @@ header ul li a:hover{
     font-size:16px;
     outline:none;
 }
-
-/* FEATURES SECTION */
 
 .features{
     padding:80px 10%;
@@ -84,7 +81,6 @@ header ul li a:hover{
     color:#333;
 }
 
-/* CARDS */
 
 .card-container{
     display:flex;
@@ -114,8 +110,6 @@ header ul li a:hover{
 .card p{
     color:#555;
 }
-
-/* FOOTER */
 
 footer{
     background:#e23744;
