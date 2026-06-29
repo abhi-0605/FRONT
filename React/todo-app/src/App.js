@@ -9,6 +9,12 @@ import React, { useState } from 'react';
 
 
 function App() {
+  let inittodo;
+  if(localStorage.getItem("todos")===null){
+    inittodo={};
+  }else{
+    inittodo=JSON.parse(localStorage.getItem("todos"));
+  }
   const ondelete =(todo)=>{
     console.log("i am ondelete of todo",todo)
 
@@ -19,12 +25,18 @@ function App() {
     setTodos(todos.filter((e)=>{
       return e!==todo;
     }));
-
+    localStorage.getItem("todos");
   }
 
   const addtodo=(title,desc)=>{
     console.log("i am adding todo",title,desc);
-    let sno=todos[todos.length-1].sno+1;
+    let sno;
+    if(todos.length==0){
+      sno=0;
+    }else{
+       sno=todos[todos.length-1].sno+1;
+    }
+  
     const mytodo={
       sno:sno,
       title:title,
@@ -32,25 +44,15 @@ function App() {
     }
     setTodos([...todos,mytodo])
     console.log(mytodo);
+
+    
+      localStorage.setItem("todos",JSON.stringify(todos));
+    
   }
 
-  const [todos, setTodos] = useState([
-    {
-      sno:1,
-      title: "Go to market",       
-      desc: "you need to go to market"
-    },
-    {
-      sno:2,
-      title: "Go to mall",
-      desc: "you need to go to market"
-    },
-    {
-      sno:3,
-      title: "Go to ghat",
-      desc: "you need to go to market"
-    },
-  ]);
+  const [todos, setTodos] = useState([inittodo]);
+
+
   return (
     <>
       <Header title="MyTodoList" searchbar={false}/>
