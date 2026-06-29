@@ -7,8 +7,12 @@ export const Addtodo = ({addtodo}) => {
         e.preventDefault();
         if(!title || !desc){
             alert("Title or Desc can't be blank")
+        }else{
+            addtodo(title,desc);
+            setTitle("");
+            setDesc("");
         }
-        addtodo(title,desc);
+        
     }
     return (
         <div className='container' my-3>
