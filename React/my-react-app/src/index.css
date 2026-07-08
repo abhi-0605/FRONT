@@ -53,7 +53,7 @@
 
 
 
-.welcome-msg{
+/* .welcome-msg{
   font-size: 2.5em;
   background-color: rgb(13, 232, 57);
   color: #ffffff;
@@ -69,4 +69,60 @@
   padding: 10px;
   border-radius: 12px;
   width: 250px;
+} */
+
+
+/* .list-category{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsl(0,0%,20%);
+  margin-bottom: 20px;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 12px;
+  background-color: hsl(185, 100%, 50%);
+}
+
+.list-item{
+  font-size: 2.5em;
+  list-style: none;
+  color: hsl(0,0%,25%);
+  text-align: center;
+  margin: 0;
+}
+
+.list-item li:hover{
+  color: hsl(0,0%,45%);
+  cursor: pointer;
+} */
+
+
+
+
+.counter-container{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.count-display{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.counter-btn{
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  background-color: rgb(37, 211, 211);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.counter-btn:hover{
+  background-color: rgb(14, 135, 135);
 }
