@@ -190,13 +190,67 @@
 // export default App
 
 
+// import React from 'react'
+// import MyComponent5 from './Component/MyComponent5'
+
+// function App() {
+//   return (
+//     <div>
+//       <MyComponent5/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import ToDoList from './Component/ToDoList'
+
+// function App() {
+//   return (
+//     <div>
+//       <ToDoList/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import MyComponent6 from './Component/MyComponent6'
+
+// function App() {
+//   return (
+//     <div>
+//       <MyComponent6/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import MyComponent7 from './Component/MyComponent7'
+
+// function App() {
+//   return (
+//     <div>
+//       <MyComponent7/>
+//     </div>
+//   )
+// }
+
+// export default App
+
 import React from 'react'
-import MyComponent5 from './Component/MyComponent5'
+import DigitalClock from './Component/DigitalClock'
 
 function App() {
   return (
     <div>
-      <MyComponent5/>
+      <DigitalClock/>
     </div>
   )
 }

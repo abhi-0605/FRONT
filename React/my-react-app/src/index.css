@@ -129,7 +129,7 @@
 
 
 
-body{
+/* body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -174,4 +174,109 @@ input[type="color"]{
   padding: 5px;
   border-radius: 12px;
   border: 3px solid hsl(0, 0%, 80%);
+} */
+
+
+
+
+/* body{
+  background-color: hwb(0 17% 82%);
+}
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+
+.add-btn{
+  background-color: hsl(125,47%,54%);
+}
+
+.add-btn:hover{
+  background-color: hsl(125,47%,44%);
+}
+
+.del-btn{
+  background-color: hsl(10, 90%, 50%);
+}
+
+.del-btn:hover{
+  background-color: hsl(0, 90%, 40%);
+}
+
+.move-btn{
+  background-color: hsl(244, 90%, 50%);
+}
+
+.move-btn:hover{
+  background-color: hsl(255, 96%, 37%);
+}
+
+input[type='text']{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsl(0, 0%, 80%, 0.5);
+  border-radius: 12px;
+  color: hsl(0, 0%, 0%, 0.5);;
+}
+
+ol{
+  padding: 0;
+}
+
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsl(0, 0%, 85%, 0.75);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  flex:1;
+
+}
+ */
+
+
+
+body{
+  background-color: rgb(170, 170, 153);
+  margin: 0;
+}
+
+.clock--container{
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+}
+
+
+.clock{
+  color: #ffffff;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
 }
