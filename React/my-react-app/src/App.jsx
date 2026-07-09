@@ -117,16 +117,87 @@
 
 
 
+// import React from 'react'
+// import MyComponent from './Component/MyComponent'
+// import Counter from './Component/Counter'
+
+// function App() {
+//   return (
+//     <>
+//       {/* <MyComponent/> */}
+//       <Counter/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import MyComponent2 from './Component/MyComponent2'
+
+// function App() {
+//   return (
+//     <>
+//       <MyComponent2/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import ColorPicker from './Component/ColorPicker'
+
+// function App() {
+//   return (
+//     <>
+//       <ColorPicker/>
+//     </>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import MyComponent3 from './Component/MyComponent3'
+
+// function App() {
+//   return (
+//     <>
+//       <MyComponent3/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+
+// import React from 'react'
+// import MyComponent4 from './Component/MyComponent4'
+
+// function App() {
+//   return (
+//     <div>
+//       <MyComponent4/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import MyComponent from './Component/MyComponent'
-import Counter from './Component/Counter'
+import MyComponent5 from './Component/MyComponent5'
 
 function App() {
   return (
-    <>
-      {/* <MyComponent/> */}
-      <Counter/>
-    </>
+    <div>
+      <MyComponent5/>
+    </div>
   )
 }
 
