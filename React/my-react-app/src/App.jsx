@@ -244,13 +244,55 @@
 
 // export default App
 
+// import React from 'react'
+// import DigitalClock from './Component/DigitalClock'
+
+// function App() {
+//   return (
+//     <div>
+//       <DigitalClock/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import ComponentA from './Component/ComponentA'
+
+// function App() {
+//   return (
+//     <div>
+//       <ComponentA/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React from 'react'
+// import MyComponent8 from './Component/MyComponent8'
+
+// function App() {
+//   return (
+//     <div>
+//       <MyComponent8/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
 import React from 'react'
-import DigitalClock from './Component/DigitalClock'
+import StopWatch from './Component/StopWatch'
 
 function App() {
   return (
     <div>
-      <DigitalClock/>
+      <StopWatch/>
     </div>
   )
 }
